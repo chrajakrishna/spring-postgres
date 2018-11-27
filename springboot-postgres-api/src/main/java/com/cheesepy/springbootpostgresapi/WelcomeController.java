@@ -24,6 +24,6 @@ public class WelcomeController {
 class WelcomeService {
 	
 	public String retrieveWelcomeMessage() {
-		return "Good Luck A";
+		return "Good Luck B";
 	}
 }
