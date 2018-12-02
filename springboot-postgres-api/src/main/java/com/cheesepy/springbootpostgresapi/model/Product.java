@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.OnDelete;
@@ -36,7 +37,11 @@ public class Product {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
+	
+	@NotNull
 	private String title;
+	
+	@NotNull
     private String actor;
     private BigDecimal price;
    
